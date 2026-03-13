@@ -1,10 +1,10 @@
-/*#include <iostream>
+#include <iostream>
 
 
 int main()
 {	
 	int array_size{};
-	std::cout << "Ââåäèòå ğàçìåğ ìàññèâà: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°: ";
 	std::cin >> array_size;
 	int* int_array = new int[array_size] {};
 	for (int i = 0; i < array_size; ++i)
@@ -12,7 +12,7 @@ int main()
 		std::cout << "arr[" << i << "] = ";
 		std::cin >> int_array[i];
 	}
-	std::cout << "Ââåä¸ííûé ìàññèâ: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²: ";
 	for (int i = 0; i < array_size; ++i)
 	{
 		std::cout << int_array[i] << " ";
@@ -22,4 +22,5 @@ int main()
 
 	return EXIT_SUCCESS;
 }
-*/
+
+
