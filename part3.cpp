@@ -8,15 +8,15 @@ void delete_two_dim_array(int** arr, int rows, int cols);
 int main()
 {
 	int rows, cols;
-	std::cout << "Ââåäèòå êîëè÷åñòâî ñòðîê: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº: ";
 	std::cin >> rows;
-	std::cout << "Ââåäèòå êîëè÷åñòâî ñòîëáöîâ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²: ";
 	std::cin >> cols;
 
 	int** Table = create_two_dim_array(rows, cols);
 	fill_two_dim_array(Table, rows, cols);
 
-	std::cout << "Òàáëèöà óìíîæåíèÿ:" << std::endl;
+	std::cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ:" << std::endl;
 	
 	print_two_dim_array(Table, rows, cols);
 	delete_two_dim_array(Table, rows, cols);
@@ -64,4 +64,5 @@ void delete_two_dim_array(int** arr, int rows, int cols)
 		delete[] arr[i];
 	}
 	delete[] arr;
+
 }
