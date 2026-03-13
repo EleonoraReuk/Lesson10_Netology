@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 
 void create_array();
@@ -13,14 +12,13 @@ int main()
 void create_array()
 {
 	int array_size{};
-	std::cout << "Ââåäèòå ğàçìåğ ìàññèâà: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°: ";
 	std::cin >> array_size;
 	double* int_array = new double[array_size] {};
-	std::cout << "Ìàññèâ: ";
+	std::cout << "ĞœĞ°ÑÑĞ¸Ğ²: ";
 	for (int i = 0; i < array_size; ++i)
 	{
 		std::cout << int_array[i] << " ";
 	}
 	delete[] int_array;
 }
-*/
