@@ -5,8 +5,11 @@ double* create_array(int& array_size);
 int main()
 {
     int array_size{};
-	double* int_array = create_array(array_size);
+
+	 std::cout << "Введите размер массива: ";
+	std::cin >> array_size;
 	
+	double* int_array = create_array(array_size);	
 	std::cout << "Массив: ";
 	for (int i = 0; i < array_size; ++i)
 	{
@@ -19,8 +22,7 @@ int main()
 
 double* create_array(int& array_size)
 {
-	std::cout << "Введите размер массива: ";
-	std::cin >> array_size;
+
 	double* int_array = new double[array_size] {};
 	return int_array;
 }
